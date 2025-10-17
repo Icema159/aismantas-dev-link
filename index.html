@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>a i s m a n t a s . d e v . l i n k</title>
+    <meta name="description"
+        content="Aismantas Skinulis – Frontend Developer (React | Tailwind | Vite). Kontaktai, CV, GitHub, LinkedIn ir QR kodas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <main class="wrap">
+        <header class="head">
+            <h1 class="brand">
+                a&nbsp;i&nbsp;s&nbsp;m&nbsp;a&nbsp;n&nbsp;t&nbsp;a&nbsp;s&nbsp;&nbsp;.&nbsp;&nbsp;d&nbsp;e&nbsp;v&nbsp;&nbsp;.&nbsp;&nbsp;l&nbsp;i&nbsp;n&nbsp;k
+            </h1>
+            <div class="id">
+                <h2>Aismantas Skinulis</h2>
+                <p class="role">Frontend Developer <span
+                        class="dim">(React&nbsp;|&nbsp;Tailwind&nbsp;|&nbsp;Vite)</span></p>
+            </div>
+        </header>
+
+        <section class="links">
+            <a class="card" id="cv-link" href="./cv/Aismantas-Skinulis-CV.pdf" download> <span class="emoji"
+                    aria-hidden="true">📄</span>
+                <div class="text">
+                    <strong>CV</strong>
+                    <span class="sub">atsisiųsti PDF</span>
+                </div>
+            </a>
+
+            <a class="card" id="gh-link" href="https://github.com/Icema159?tab=repositories" target="_blank"
+                rel="noopener">
+                <span class="emoji" aria-hidden="true">💻</span>
+                <div class="text">
+                    <strong>GitHub</strong>
+                    <span class="sub">github.com/aismantas</span>
+                </div>
+            </a>
+
+            <a class="card" id="li-link" href="https://www.linkedin.com/in/aismantas-skinulis-202bb8366/"
+                target="_blank" rel="noopener">
+                <span class="emoji" aria-hidden="true">🔗</span>
+                <div class="text">
+                    <strong>LinkedIn</strong>
+                    <span class="sub">linkedin.com/in/aismantas</span>
+                </div>
+            </a>
+
+            <a class="card" id="mail-link" href="mailto:aismantass@gmail.com">
+                <span class="emoji" aria-hidden="true">📧</span>
+                <div class="text">
+                    <strong>Email</strong>
+                    <span class="sub">aismantass@gmail.com</span>
+                </div>
+            </a>
+        </section>
+
+        <footer class="foot">
+            <div class="qr-wrap">
+                <h3>QR kodas (nuves į šį puslapį)</h3>
+                <div id="qrcode" class="qr-box" aria-label="QR kodas"></div>
+                <button id="download-qr" class="btn">Atsisiųsti QR (PNG)</button>
+                <p class="tiny">Parodęs šį QR parodoje ar telefone, nukreipsi į <span
+                        id="target-url">https://aismantas.dev.link</span></p>
+            </div>
+            <p class="credit">© <span id="year"></span> Aismantas Skinulis</p>
+        </footer>
+    </main>
+
+    <!-- QR generatorius (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-MA+CGVQJqvH0F3U8mXb6+O/k3d7v7jRkHwo2GJm8yL0u1fG2GzqY9Yk8E3P6Hq4E0k+S6vKQWmAqM2Z2G4n3iQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
