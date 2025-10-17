@@ -1,6 +1,7 @@
 // app.js
-const HUB_URL = "https://aismantas.dev.link";
+const HUB_URL = "https://icema159.github.io/aismantas-dev-link/";
 
+// QR kodo generavimas
 const qr = new QRCode(document.getElementById("qrcode"), {
     text: HUB_URL,
     width: 220,
@@ -8,6 +9,7 @@ const qr = new QRCode(document.getElementById("qrcode"), {
     correctLevel: QRCode.CorrectLevel.M,
 });
 
+// QR atsisiuntimo funkcija
 document.getElementById("download-qr").addEventListener("click", () => {
     const img = document.querySelector("#qrcode img");
     const canvas = document.querySelector("#qrcode canvas");
